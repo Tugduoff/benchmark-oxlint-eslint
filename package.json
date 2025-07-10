@@ -1,0 +1,30 @@
+{
+  "name": "oxlint-eslint-benchmark",
+  "version": "1.0.0",
+  "description": "CI/CD performance benchmark comparing oxlint and ESLint",
+  "main": "ci-benchmark.js",
+  "scripts": {
+    "benchmark": "node ci-benchmark.js",
+    "setup": "node setup.js",
+    "clean": "rm -rf test-files/ results/*.json results/*.md && echo 'Cleaned generated files'",
+    "test": "npm run setup && npm run benchmark"
+  },
+  "keywords": [
+    "benchmark",
+    "oxlint",
+    "eslint",
+    "linter",
+    "performance",
+    "ci",
+    "cd"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "chalk": "^4.1.2"
+  }
+}
